@@ -78,6 +78,16 @@ namespace QuestionaireApp
             return output;
         }
 
+        public bool IsOptionCorrect(int index)
+        {
+            if (index < 0 || index >= options.Count)
+            {
+                return false;
+            }
+
+            return options[index].IsCorrect;
+        }
+
         // Attributes
         private string text = "There should be a question here ...";
 

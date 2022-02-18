@@ -6,6 +6,18 @@ namespace QuestionaireApp
 {
     class MultipleChoiceOption
     {
+        // Constructor
+        public MultipleChoiceOption()
+        {
+        }
+
+        // 2nd constructor (contructor overloading)
+        public MultipleChoiceOption(string text, bool isCorrect)
+        {
+            Text = text;
+            IsCorrect = isCorrect;
+        }
+
         public override string ToString()
         {
             return Text;
@@ -28,7 +40,7 @@ namespace QuestionaireApp
             }
         }
 
-        // Atributes
+        // Attributes
         private string text = "";
     }
 }
