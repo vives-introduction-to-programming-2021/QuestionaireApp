@@ -24,6 +24,10 @@ namespace QuestionaireApp
         //    return text;
         //}
 
+        public MultipleChoiceQuestion(string text)
+        {
+            Text = text;
+        }
 
         // Generated using 'propfull'
         public string Text
